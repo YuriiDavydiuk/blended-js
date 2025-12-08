@@ -14,4 +14,4 @@ function min(a, b) {
   return a < b ? a : b;
 }
 
-min(2, 5);
+console.log(min('1288', 5052));
