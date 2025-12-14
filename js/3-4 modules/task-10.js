@@ -14,3 +14,23 @@
 //     { name: "Виноград", price: 440, quantity: 3 },
 //     { name: "Банан", price: 125, quantity: 3 },
 //   ];
+
+const fruits = [
+  { name: 'Яблуко', price: 45, quantity: 7 },
+  { name: 'Апельсин', price: 60, quantity: 4 },
+  { name: 'Банан', price: 125, quantity: 8 },
+  { name: 'Груша', price: 350, quantity: 2 },
+  { name: 'Виноград', price: 440, quantity: 3 },
+  { name: 'Банан', price: 125, quantity: 3 },
+];
+
+function calcTotalPrice(fruits, fruitName) {
+  let totlaPrice = 0;
+  for (const item of fruits) {
+    if (item.name === fruitName) {
+      totlaPrice = item.price * item.quantity;
+    }
+  }
+  return totlaPrice;
+}
+console.log(calcTotalPrice(fruits, 'Банан'));

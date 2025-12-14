@@ -6,20 +6,30 @@
 
 // const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 
-
 function findSmallestNumber(numbers) {
-    if (!Array.isArray(numbers)) {
-        return 'Sory, it is not an array!';
-    }
+  if (!Array.isArray(numbers)) {
+    return 'Sory, it is not an array!';
+  }
 
-    let smallestNumber = numbers[0];
-    for (const num of numbers) {
-        if (smallestNumber > num) {
-            smallestNumber = num;
-        }
+  let smallestNumber = numbers[0];
+  for (const num of numbers) {
+    if (smallestNumber > num) {
+      smallestNumber = num;
     }
-    return smallestNumber;
+  }
+  return smallestNumber;
 }
 
- const numbers = [255, 51, 35, 56, 12, 24, 1, 80, 3];
- console.log(findSmallestNumber(numbers));
+const numbers = [255, 51, 35, 56, 12, 24, 1, 80, 3];
+console.log(findSmallestNumber(numbers));
+
+/// const numbers = [1, 5, 35, 56, 12, 24, 7, 80, 3];
+
+// function findSmallestNumber(numbers) {
+//  if (Array.isArray(numbers)) {
+//    return Math.min(...numbers);
+//  }
+//  return 'Sory, it is not an array!';
+// }
+
+// console.log(findSmallestNumber(numbers));

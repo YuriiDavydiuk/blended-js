@@ -20,3 +20,32 @@ function checkLogin(array) {
   return alert(newAlert);
 }
 checkLogin(['Peter', 'John', 'Igor', 'Sasha']);
+
+// const logins = ['Peter', 'John', 'Igor', 'Sasha'];
+
+// function checkLogin(array) {
+//  const userPromt = prompt("Введіть ім'я");
+//  if (array.includes(userPromt)) {
+//   return alert(`Welcome, ${userPromt}!`);
+//  }
+//  alert(`User not found`);
+// }
+
+// checkLogin(logins);
+
+// function name(params) {
+//   if (arr.includes(userName)) {
+//     return alert(`Welcome ${userName}`);
+//   }
+
+//   alert('User not found');
+// }
+// function checkLogin(arr) {
+//   const userName = prompt("Введіть ім'я");
+
+//   if (arr.includes(userName)) {
+//     alert(`Welcome ${userName}`);
+//   } else {
+//     alert('User not found');
+//   }
+// }

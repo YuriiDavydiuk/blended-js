@@ -8,3 +8,20 @@
 //     Poly: 160,
 //     Ajax: 1470,
 //   };
+
+const salaries = {
+  Mango: 100,
+  Poly: 160,
+  Ajax: 1470,
+};
+
+function totalSalaries(obj) {
+  const arr = Object.keys(obj);
+  let sum = 0;
+  for (const item of arr) {
+    sum += obj[item];
+  }
+  return sum;
+}
+
+console.log(totalSalaries(salaries));
